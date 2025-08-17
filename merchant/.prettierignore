@@ -1,0 +1,17 @@
+# .prettierignore
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore generated files
+*.min.js
+*.map
+
+# Ignore specific files
+tsconfig.json
+secret.js
+babel.config.js

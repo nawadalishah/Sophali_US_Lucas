@@ -1,0 +1,93 @@
+{
+  "expo": {
+    "name": "Sophali-Merchant-Demo",
+    "jsEngine": "hermes",
+    "slug": "sophali-merchant-app",
+    "version": "1.1.5",
+    "orientation": "default",
+    "icon": "./assets/sophaliIcon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#ffffff",
+          "image": "./assets/splashMerchant.png",
+          "imageWidth": 200
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0",
+            "usesCleartextTraffic": true
+          },
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Sophali to access camera to scan QR code"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/sophali.png",
+          "color": "#ffffff"
+        }
+      ],
+      "expo-font"
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/5f2562dd-905b-4768-af9b-45522db34674"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Sophali to access camera to scan QR code",
+        "NSMicrophoneUsageDescription": "Allow Sophali to access your microphone to record audio"
+      },
+      "bundleIdentifier": "com.sophali.merchant",
+      "buildNumber": "5"
+    },
+    "androidStatusBar": {
+      "translucent": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/sophali.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.sophali.merchant",
+      "versionCode": 5 ,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/sophali.png"
+    },
+    "owner": "baymaxibk",
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}

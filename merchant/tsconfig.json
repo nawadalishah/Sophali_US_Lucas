@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "jsx": "react",
+    "strict": true,
+    "types": ["node", "react", "react-native"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+  }
+}
